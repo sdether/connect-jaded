@@ -12,7 +12,8 @@ app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(jaded.middleware({
-  templatepath: path.join(__dirname, 'public')
+  templatepath: path.join(__dirname, 'public'),
+  ext: '.html'
 }));
 if('development' == app.get('env')) {
   app.use(express.errorHandler());
