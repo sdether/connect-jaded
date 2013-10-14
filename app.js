@@ -13,7 +13,8 @@ app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(jaded.middleware({
   templatepath: path.join(__dirname, 'templates'),
-  ext: '.html'
+  ext: '.html',
+  notrailingslash: true
 }));
 if('development' == app.get('env')) {
   app.use(express.errorHandler());
