@@ -7,7 +7,7 @@ This to in no way shape or form ready for use.
 
 So what's left before it's even worth trying?
 
-* Get staleness checking based on mtime
+* ~~Get staleness checking based on mtime~~
 * Get jade modifications for tracking template dependencies accepted upstream
 * Add a callback for providing template locals
 * Add template data hashing to determine staleness based on data changes

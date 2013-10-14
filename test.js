@@ -1,5 +1,5 @@
 var path = require('path');
-
+var fs = require('fs');
 
 function analyze(requestPath, _options) {
   console.log('path: ' + requestPath);
@@ -50,8 +50,17 @@ function analyze2(requestPath, _options) {
   dir = path.dirname(requestPath);
   console.log('parsed:  ' + JSON.stringify([dir, file]));
 }
-var paths = ['/', '/index.html', '/foo.htm', '/foo', '/foo.html', '/foo/', '/foo/index.html', '/foo/bar'];
-for(var i = 0; i < paths.length; i++) {
-  analyze(paths[i], {});
-  console.log('');
-}
+
+//var paths = ['/', '/index.html', '/foo.htm', '/foo', '/foo.html', '/foo/', '/foo/index.html', '/foo/bar'];
+//for(var i = 0; i < paths.length; i++) {
+//  analyze(paths[i], {});
+//  console.log('');
+//}
+
+fs.stat(process.argv[2],function(err,stats) {
+  if(err) {
+    return console.log(err);
+  }
+  console.log(JSON.stringify(stats,null,2));
+});
+
