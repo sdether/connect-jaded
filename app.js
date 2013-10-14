@@ -14,7 +14,8 @@ app.use(express.methodOverride());
 app.use(jaded.middleware({
   templatepath: path.join(__dirname, 'templates'),
   ext: '.html',
-  notrailingslash: true
+  notrailingslash: true,
+  ignore: ['/@api']
 }));
 if('development' == app.get('env')) {
   app.use(express.errorHandler());
