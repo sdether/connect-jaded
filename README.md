@@ -1,7 +1,7 @@
-jaded 0.1a
+connect-jaded 0.1a
 =========
 
-jaded (pronounced jade-dee) provides connect middleware to generate static html on demand for infrequently
+connect-jaded (pronounced jade-dee) provides connect middleware to generate static html on demand for infrequently
 changing jade templates/data. When the template and render data changes infrequently, jaded provides the benefit
 of responding with a file send rather than a template execute and it will properly handle handle cache headers to
 respond with a `304 NOT MODIFIED` rather than a `200 OK`.
