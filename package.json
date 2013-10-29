@@ -1,7 +1,7 @@
 {
   "name": "jaded",
   "version": "0.1.0",
-  "description": "Connect middleware for static html generation from infrequently changing jade templates",
+  "description": "Connect middleware for generating static html on demand from infrequently changing jade templates/data",
   "main": "index.js",
   "dependencies": {
     "jade": "git://github.com/sdether/jade#resolve_dependencies",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sdether/jaded.git"
+    "url": "git://github.com/sdether/connect-jaded.git"
   },
   "keywords": [
     "jade",
@@ -27,6 +27,6 @@
   "readmeFilename": "README.md",
   "gitHead": "d40babd3911b3d065eef0f214e2e9c6ce12bd36b",
   "bugs": {
-    "url": "https://github.com/sdether/jaded/issues"
+    "url": "https://github.com/sdether/connect-jaded/issues"
   }
 }
