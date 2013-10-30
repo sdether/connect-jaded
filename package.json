@@ -1,6 +1,6 @@
 {
-  "name": "jaded",
-  "version": "0.1.0",
+  "name": "connect-jaded",
+  "version": "0.1.1",
   "description": "Connect middleware for generating static html on demand from infrequently changing jade templates/data",
   "main": "index.js",
   "dependencies": {
